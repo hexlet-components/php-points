@@ -8,6 +8,7 @@ use function PhpPoints\Points\makePoint;
 use function PhpPoints\Points\getX;
 use function PhpPoints\Points\getY;
 use function PhpPoints\Points\toString;
+use function PhpPoints\points\getQuadrant;
 
 class PointsTest extends TestCase
 {
@@ -30,5 +31,22 @@ class PointsTest extends TestCase
 
         $this->assertEquals("(1, 8)", toString($points1));
         $this->assertEquals("(-6, 0)", toString($points2));
+    }
+
+    public function testGetQuadrant()
+    {
+        $point1 = makePoint(0, 0);
+        $point2 = makePoint(5, 0);
+        $point3 = makePoint(1, 5);
+        $point4 = makePoint(-3, 10);
+        $point5 = makePoint(-2, -5);
+        $point6 = makePoint(4, -1);
+
+        $this->assertEquals(null, (getQuadrant($point1)));
+        $this->assertEquals(null, (getQuadrant($point2)));
+        $this->assertEquals(1, (getQuadrant($point3)));
+        $this->assertEquals(2, (getQuadrant($point4)));
+        $this->assertEquals(3, (getQuadrant($point5)));
+        $this->assertEquals(4, (getQuadrant($point6)));
     }
 }
