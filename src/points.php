@@ -2,6 +2,12 @@
 
 namespace PhpPoints\Points;
 
+/**
+ * Creates a point with two coordinates
+ * @param int $x
+ * @param int $y
+ * @return array
+ */
 function makePoint($x, $y)
 {
     return [
@@ -10,16 +16,31 @@ function makePoint($x, $y)
     ];
 }
 
+/**
+ * Extracts x coordinate from point
+ * @param array $point
+ * @return int
+ */
 function getX($point)
 {
     return $point['x'];
 }
 
+/**
+ * Extracts y coordinate from point
+ * @param array $point
+ * @return int
+ */
 function getY($point)
 {
     return $point['y'];
 }
 
+/**
+ * Converts given point to string
+ * @param array $point
+ * @return string
+ */
 function toString($point)
 {
     $x = getX($point);
@@ -28,6 +49,11 @@ function toString($point)
     return "($x, $y)";
 }
 
+/**
+ * Returns the quadrant number
+ * @param array $point
+ * @return int
+ */
 function getQuadrant($point)
 {
     $x = getX($point);
