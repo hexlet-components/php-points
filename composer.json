@@ -23,7 +23,7 @@
     },
     "autoload": {
         "files": [
-            "src/points.php"
+            "src/Points.php"
         ]
     }
 }

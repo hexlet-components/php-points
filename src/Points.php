@@ -1,6 +1,6 @@
 <?php
 
-namespace PhpPoints\Points;
+namespace Php\Points\Points;
 
 /**
  * Creates a point with two coordinates

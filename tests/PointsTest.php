@@ -1,14 +1,14 @@
 <?php
 
-namespace PhpPoints\tests;
+namespace Php\Points\tests;
 
 use PHPUnit\Framework\TestCase;
 
-use function PhpPoints\Points\makePoint;
-use function PhpPoints\Points\getX;
-use function PhpPoints\Points\getY;
-use function PhpPoints\Points\toString;
-use function PhpPoints\points\getQuadrant;
+use function Php\Points\Points\makePoint;
+use function Php\Points\Points\getX;
+use function Php\Points\Points\getY;
+use function Php\Points\Points\toString;
+use function Php\Points\points\getQuadrant;
 
 class PointsTest extends TestCase
 {
