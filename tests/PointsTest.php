@@ -8,7 +8,7 @@ use function Php\Points\Points\makePoint;
 use function Php\Points\Points\getX;
 use function Php\Points\Points\getY;
 use function Php\Points\Points\toString;
-use function Php\Points\points\getQuadrant;
+use function Php\Points\Points\getQuadrant;
 
 class PointsTest extends TestCase
 {
