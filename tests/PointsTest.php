@@ -12,7 +12,6 @@ use function Php\Points\Points\getQuadrant;
 
 class PointsTest extends TestCase
 {
-
     public function testMakePoints()
     {
         $points1 = makePoint(1, 8);
