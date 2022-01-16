@@ -1,6 +1,6 @@
 # php-points
 
-[![github action status](https://github.com/hexlet-components/php-points/workflows/master/badge.svg)](https://github.com/hexlet-components/php-points/actions)
+[![github action status](https://github.com/hexlet-components/php-graphs/workflows/PHP%20CI/badge.svg)](../../actions)
 
 ## Functions for working with Points
 
