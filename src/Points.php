@@ -8,7 +8,7 @@ namespace Php\Points\Points;
  * @param int $y
  * @return array
  */
-function makePoint($x, $y)
+function makePoint(int $x, int $y): array
 {
     return [
         'x' => $x,
@@ -21,7 +21,7 @@ function makePoint($x, $y)
  * @param array $point
  * @return int
  */
-function getX($point)
+function getX($point): int
 {
     return $point['x'];
 }
@@ -31,7 +31,7 @@ function getX($point)
  * @param array $point
  * @return int
  */
-function getY($point)
+function getY(array $point): int
 {
     return $point['y'];
 }
@@ -41,7 +41,7 @@ function getY($point)
  * @param array $point
  * @return string
  */
-function toString($point)
+function toString(array $point): string
 {
     $x = getX($point);
     $y = getY($point);
@@ -50,11 +50,11 @@ function toString($point)
 }
 
 /**
- * Returns the quadrant number
+ * Returns the quadrant number. Returns null if on x or y line
  * @param array $point
- * @return int
+ * @return ?int
  */
-function getQuadrant($point)
+function getQuadrant(array $point): ?int
 {
     $x = getX($point);
     $y = getY($point);

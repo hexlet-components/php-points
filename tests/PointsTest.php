@@ -12,7 +12,7 @@ use function Php\Points\Points\getQuadrant;
 
 class PointsTest extends TestCase
 {
-    public function testMakePoints()
+    public function testMakePoints(): void
     {
         $points1 = makePoint(1, 8);
         $points2 = makePoint(-6, 0);
@@ -23,7 +23,7 @@ class PointsTest extends TestCase
         $this->assertEquals(0, getY($points2));
     }
 
-    public function testToString()
+    public function testToString(): void
     {
         $points1 = makePoint(1, 8);
         $points2 = makePoint(-6, 0);
@@ -32,7 +32,7 @@ class PointsTest extends TestCase
         $this->assertEquals("(-6, 0)", toString($points2));
     }
 
-    public function testGetQuadrant()
+    public function testGetQuadrant(): void
     {
         $point1 = makePoint(0, 0);
         $point2 = makePoint(5, 0);
