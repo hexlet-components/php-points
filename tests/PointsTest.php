@@ -23,6 +23,16 @@ class PointsTest extends TestCase
         $this->assertEquals(0, getY($points2));
     }
 
+    public function testFloatCoordinates(): void
+    {
+        $point = makePoint(-1.5, 0);
+
+        $this->assertSame(-1.5, getX($point));
+        $this->assertSame(0, getY($point));
+        $this->assertEquals("(-1.5, 0)", toString($point));
+        $this->assertEquals(null, getQuadrant($point));
+    }
+
     public function testToString(): void
     {
         $points1 = makePoint(1, 8);
