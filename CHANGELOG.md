@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.1.0](https://github.com/hexlet-components/php-points/compare/v2.0.0...v2.1.0) (2026-10-24)
+
+
+### Features
+
+* дробные координаты точки ([#10](https://github.com/hexlet-components/php-points/issues/10)) ([e4e1bad](https://github.com/hexlet-components/php-points/commit/e4e1badae010d88a59a3ae5946c0bff5822233ad))
+
 ## [2.0.0](https://github.com/hexlet-components/php-points/compare/v1.1.0...v2.0.0) (2026-08-18)
 
 
