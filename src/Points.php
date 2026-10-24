@@ -4,11 +4,11 @@ namespace Php\Points\Points;
 
 /**
  * Creates a point with two coordinates
- * @param int $x
- * @param int $y
+ * @param int|float $x
+ * @param int|float $y
  * @return array
  */
-function makePoint(int $x, int $y): array
+function makePoint(int|float $x, int|float $y): array
 {
     return [
         'x' => $x,
@@ -19,9 +19,9 @@ function makePoint(int $x, int $y): array
 /**
  * Extracts x coordinate from point
  * @param array $point
- * @return int
+ * @return int|float
  */
-function getX($point): int
+function getX(array $point): int|float
 {
     return $point['x'];
 }
@@ -29,9 +29,9 @@ function getX($point): int
 /**
  * Extracts y coordinate from point
  * @param array $point
- * @return int
+ * @return int|float
  */
-function getY(array $point): int
+function getY(array $point): int|float
 {
     return $point['y'];
 }
